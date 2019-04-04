@@ -30,3 +30,10 @@ def message(name):
 
 results = list(map(message, names))
 print(results)
+
+# exercise 3-3
+vehicles = ['bicycle', 'taxi', 'car', 'train']
+print(f'I like to ride my {vehicles[0]}!')
+print(f'Some think the {vehicles[1]} is becoming obsolete.')
+print(f'There are lots of {vehicles[-1]}s in Japan!')
+print(f'Lots of people own a {vehicles[-2]}.')
