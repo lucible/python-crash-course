@@ -1,6 +1,7 @@
-# removing items from a list #
 farts = ['gooey', 'sticky', 'moist']
 print(farts)
+
+# removing items from a list #
 
 # del keyword
 # this goes //before// the list, and operates on objects, not just lists
@@ -23,9 +24,28 @@ print(farts)
 # append() method
 # exclusive to lists, adds element to end of list
 farts.append('dry')
-print(farts)
+farts.append('mossy')
+print(farts, 'this is appended')
 
 # insert() method
 # exclusive to lists, inserts element at specified position
-farts.insert(0, 'windy')
-print(farts)
+farts.insert(1, 'windy')
+farts.insert(2, 'smelly')
+print(farts, 'this is inserted\n')
+
+# list organization #
+
+# sort() method
+# exclusive to lists, permanently sorts the list, default ascending
+fartsOrig = farts[:]
+farts.sort()
+print(farts, 'this is sorted')
+farts.sort(reverse=True)
+print(farts, 'this is reverse sorted\n')
+
+# sorted() function
+# returns a sorted list of the specified iterable object, default ascending
+print(fartsOrig, 'this is the original list')
+print(sorted(fartsOrig), 'this is sorted...')
+print(fartsOrig, 'but the original list doesn\'t change')
+print(sorted(fartsOrig, reverse=True), 'reverse sorted impermanently')
