@@ -36,7 +36,7 @@ print(farts, 'this is inserted\n')
 # list organization #
 
 # sort() method
-# exclusive to lists, permanently sorts the list, default ascending
+# exclusive to lists, sorts the list in-place, default ascending
 fartsOrig = farts[:]
 farts.sort()
 print(farts, 'this is sorted')
@@ -48,4 +48,16 @@ print(farts, 'this is reverse sorted\n')
 print(fartsOrig, 'this is the original list')
 print(sorted(fartsOrig), 'this is sorted...')
 print(fartsOrig, 'but the original list doesn\'t change')
-print(sorted(fartsOrig, reverse=True), 'reverse sorted impermanently')
+print(sorted(fartsOrig, reverse=True), 'reverse sorted impermanently\n')
+
+# other operations #
+
+# reverse() method
+# reverses the order of list elements
+print(fartsOrig, 'this is the original list')
+fartsOrig.reverse()
+print(fartsOrig, 'this is reversed\n')
+
+# len() function
+# returns the number of items in an object (including lists)
+print(len(farts), 'this is the length of the farts list')
