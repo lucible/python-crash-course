@@ -29,8 +29,8 @@ print('\n'.join(map(invite, guests)))
 
 # exercise 3-7
 
-print('Oh NO, the table won\'t arrive in time!\nOnly two people\
-     can come to dinner now.')
+print('Oh NO, the table won\'t arrive in time!\nOnly two people \
+can come to dinner now.')
 
 
 def sorry(name):
@@ -39,11 +39,15 @@ def sorry(name):
 
 # there's gotta be a better way to do this, right?
 # I could do a while loop here...
-print(sorry(guests.pop()))
-print(sorry(guests.pop()))
-print(sorry(guests.pop()))
-print(sorry(guests.pop()))
+# print(sorry(guests.pop()))
+# print(sorry(guests.pop()))
+# print(sorry(guests.pop()))
+# print(sorry(guests.pop()))
 
+noInvites = guests[:4]
+del guests[:4]
+
+print('\n'.join(map(sorry, noInvites)))
 print('\n'.join(map(invite, guests)))
 
 del guests[1]
