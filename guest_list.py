@@ -27,6 +27,10 @@ print(list(map(invite, guests)))
 # aha, I googled a better way to print out the list!
 print('\n'.join(map(invite, guests)))
 
+# exercise 3-9
+guestNum = len(guests)
+print(guestNum, 'guests are coming to dinner.')
+
 # exercise 3-7
 
 print('Oh NO, the table won\'t arrive in time!\nOnly two people \
