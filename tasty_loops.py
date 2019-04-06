@@ -58,3 +58,16 @@ for x in my_foods:
 
 for x in friend_foods:
     print(f'My friend likes to eat {x}.')
+
+# exercise 4-13
+buffet = ('mashed potatoes', 'steak', 'french fries',
+          'cheeseburger', 'milkshake')
+print('The buffet currently serves:')
+for x in buffet:
+    print(x)
+
+buffet = ('steak', 'green beans', 'french fries',
+          'cheeseburger', 'ice cream sundae')
+print('The menu has changed!')
+for x in buffet:
+    print(x)
