@@ -16,6 +16,18 @@ def yum(restaurant):
 
 print('\n'.join(map(yum, pizzas)))
 
+# exercise 4-11
+friend_pizzas = pizzas[:]
+
+pizzas.append('Spin! Pizza')
+friend_pizzas.append('Dominio\'s')
+
+for x in friend_pizzas:
+    print(f'My friend likes to eat pizza at {x}!')
+
+for x in pizzas:
+    print(f'I like to eat pizza at {x}.')
+
 # exercise 4-2
 furbies = ['cat', 'giraffe', 'gorilla']
 
@@ -33,3 +45,16 @@ def hasFur(animal):
 
 
 print('\n'.join(map(hasFur, furbies)))
+
+# exercise 4-12
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+for x in my_foods:
+    print(f'I like to eat {x}.')
+
+for x in friend_foods:
+    print(f'My friend likes to eat {x}.')

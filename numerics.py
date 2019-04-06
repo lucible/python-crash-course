@@ -28,3 +28,8 @@ print(cubes)
 # exercise 4-9
 cubes2 = [x**3 for x in range(1, 11)]
 print(cubes2)
+
+# exercise 4-10
+print('The first three items in the list are:', cubes2[:3])
+print('Three items from the middle of the list are:', cubes2[3:6])
+print('The last three items from the list are:', cubes2[-3:])
